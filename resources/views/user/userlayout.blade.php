@@ -71,7 +71,7 @@
                     Hello, {{ $data->name }}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="{{ route('user_profile') }}">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Messages</a></li>
                     <li><a class="dropdown-item" href="{{ route('logout') }}">Sign out</a></li>
                 </ul>

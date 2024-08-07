@@ -43,6 +43,10 @@ Route::get('user/usertenders', [UserController::class, 'user_tenders'])->name('u
 Route::get('user/userbids/{id}', [UserController::class, 'user_bids'])->name('user_bids');
 Route::get('user/viewbids', [UserController::class, 'view_bids'])->name('view_bids');
 
+Route::get('user/userprofile', [UserController::class, 'user_profile'])->name('user_profile');
+Route::post('update_details/{id}', [UserController::class, 'update_details'])->name('update_details');
+Route::post('update_password/{id}', [UserController::class, 'update_password'])->name('update_password');
+Route::post('delete_account/{id}', [UserController::class, 'delete_account'])->name('delete_account');
 
 
 
